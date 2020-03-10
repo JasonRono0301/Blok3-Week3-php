@@ -124,6 +124,7 @@ create table `creature` (
 	`experience` int not null,
 	`spawn` int not null
 )
+
 engine = InnoDB;
 alter table `creature` add index(`spawn`);
 alter table `creature` add foreign key(`spawn`) references `region`(`id`);
